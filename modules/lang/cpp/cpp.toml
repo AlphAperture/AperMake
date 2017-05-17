@@ -1,0 +1,5 @@
+[lang]
+lang = "cpp"
+name = "C++"
+aliases = ["cxx", "c++"]
+build_system = 1

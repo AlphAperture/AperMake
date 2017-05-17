@@ -1,0 +1,15 @@
+[package]
+project = "AperMake"
+description = "AperMake, a cross-platform, open-source build system and dependencies management."
+version = "0.0.1"
+authors = ["AperEntertainment <aper.entertainment@gmail.com>","wAperClem <waperclem@gmail.com>"]
+type = "root"
+license = "MIT License"
+repository = "https://github.com/AperEntertainment/AperMake.git"
+readme = "README.md"
+
+# Subprojects
+[subprojects.library]
+directory = "library"
+[subprojects.executable]
+directory = "executable"

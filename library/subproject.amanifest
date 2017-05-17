@@ -1,0 +1,22 @@
+[package]
+name = "apermake"
+type = "library"
+lang = "cpp"
+
+[dependencies]
+apercommon = { type = "git", source = "https://github.com/AperEntertainment/AperCommon.git" }
+
+[dependencies.cpptoml]
+type = "git"
+source = "https://github.com/skystrife/cpptoml.git"
+build = "NO_BUILD__HEADER_ONLY"
+
+[dependencies.filesystem]
+type = "git"
+source = "https://github.com/wjakob/filesystem.git"
+build = "NO_BUILD__HEADER_ONLY"
+
+[dependencies.optional]
+type = "git"
+source = "https://github.com/akrzemi1/Optional.git"
+build = "NO_BUILD__HEADER_ONLY"

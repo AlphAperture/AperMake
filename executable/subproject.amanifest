@@ -1,0 +1,7 @@
+[package]
+name = "amake"
+type = "executable"
+lang = "cpp"
+
+[dependencies]
+apermake = { type = "local", source = "inside" }
