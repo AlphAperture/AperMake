@@ -96,11 +96,46 @@ namespace apermake
         {
             return _authors;
         }
+
+        /**
+         * Gets the lang of the project.
+         * @return The lang of the project.
+         */
+        inline STRING APERMAKE_API getLang() const
+        {
+            return _lang;
+        }
+
+        /**
+         * Gets the license of the project.
+         * @return The license of the project.
+         */
+        inline STRING APERMAKE_API getLicense() const
+        {
+            return _license;
+        }
+
+        /**
+         * Gets the repository of the project.
+         * @return The repository of the project.
+         */
+        inline STRING APERMAKE_API getRepository() const
+        {
+            return _repository;
+        }
+
+        /**
+         * Gets the readme of the project.
+         * @return The readme of the project.
+         */
+        inline STRING APERMAKE_API getReadme() const
+        {
+            return _readme;
+        }
     };
 
     extern std::experimental::optional<Project> APERMAKE_API loadProject(apercommon::filesystem::Path path);
 }
 
-#undef STRING
 #undef STRING
 #endif //APERMAKE_PROJECT_H

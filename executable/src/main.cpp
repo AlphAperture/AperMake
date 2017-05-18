@@ -39,7 +39,13 @@ int main(int argc, char **argv)
     cout << "Name: " << project.getName() << endl;
     cout << "Description: " << project.getDescription() << endl;
     cout << "Version: " << project.getVersion() << endl;
-    cout << "Authors: "; printVector(project.getAuthors());
+    cout << "Authors: ";
+    printVector(project.getAuthors());
+    cout << "Lang: " << project.getLang() << endl;
+    cout << "License: " << project.getLicense() << endl;
+    cout << "Repository: " << project.getRepository() << endl;
+    cout << "README: " << project.getReadme() << endl;
+
     return 0;
 }
 
