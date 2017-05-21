@@ -26,7 +26,9 @@ namespace apermake
         UNKNOWN = -1
     };
 
-    const STRING defaultReadmeFile = "README.md";
+    const STRING PROJECT_FILE_NAME = "project.amanifest";
+
+    const STRING DEFAULT_README_FILE = "README.md";
 
     extern ProjectType APERMAKE_API convertStrToProjectType(STRING type);
 
@@ -50,7 +52,7 @@ namespace apermake
         APERMAKE_API Project(apercommon::filesystem::Path path, STRING name, STRING description, STRING version,
                              std::vector<STRING> authors, ProjectType type, STRING lang, STRING license = "",
                              STRING repository = "",
-                             STRING readme = defaultReadmeFile);
+                             STRING readme = DEFAULT_README_FILE);
 
         /**
          * Gets the path of the project.
@@ -135,6 +137,9 @@ namespace apermake
     };
 
     extern std::experimental::optional<Project> APERMAKE_API loadProject(apercommon::filesystem::Path path);
+
+    extern Project APERMAKE_API
+    newProject(apercommon::filesystem::Path path, STRING name, ProjectType type, STRING lang = "");
 }
 
 #undef STRING

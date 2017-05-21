@@ -15,7 +15,7 @@ include_directories(dependencies/apercommon/include dependencies/cpptoml/include
 
 # All files
 # There is the C++ headers files.
-set(HEADERS_BASE library/include/apermake/apermake.h library/include/apermake/project.h library/include/apermake/lang.h library/include/apermake/dependency.h)
+set(HEADERS_BASE library/include/apermake/apermake.h library/include/apermake/project.h library/include/apermake/lang.h library/include/apermake/dependency.h library/include/apermake/errors.h)
 set(HEADERS_FILES ${HEADERS_BASE})
 # There is the C++ src files.
 set(SOURCES_BASE library/src/apermake.cpp library/src/project.cpp)

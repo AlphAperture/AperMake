@@ -1,9 +1,9 @@
-[submodule "dependencies/apercommon"]
-	path = dependencies/apercommon
-	url = https://github.com/AperEntertainment/AperCommon.git
 [submodule "dependencies/cpptoml"]
 	path = dependencies/cpptoml
 	url = https://github.com/skystrife/cpptoml.git
-[submodule "dependencies\\optional"]
-	path = dependencies\\optional
+[submodule "dependencies/apercommon"]
+	path = dependencies/apercommon
+	url = https://github.com/AlphAperture/AperCommon.git
+[submodule "dependencies/optional"]
+	path = dependencies/optional
 	url = https://github.com/akrzemi1/Optional.git
